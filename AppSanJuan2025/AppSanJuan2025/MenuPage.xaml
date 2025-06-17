@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSanJuan2025.MenuPage"
+            Title="Programa San Juan 2025"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Image Source="sanjuan.jpg" Aspect="AspectFill" HeightRequest="200"/>
+
+            <Label Text="Selecciona un Día o Evento"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Button Text="13 de Junio" Clicked="OnNavigate" CommandParameter="13" />
+            <Button Text="14 de Junio" Clicked="OnNavigate" CommandParameter="14" />
+            <Button Text="15 de Junio" Clicked="OnNavigate" CommandParameter="15" />
+            <Button Text="16 de Junio" Clicked="OnNavigate" CommandParameter="16" />
+            <Button Text="17 de Junio" Clicked="OnNavigate" CommandParameter="17" />
+            <Button Text="21 de Junio - Festival del Tamal" Clicked="OnNavigate" CommandParameter="Festival" />
+            <Button Text="22 de Junio - Identidad Chotana" Clicked="OnNavigate" CommandParameter="Identidad" />
+            <Button Text="23 y 24 de Junio - Sanjuanpampa" Clicked="OnNavigate" CommandParameter="Sanjuanpampa" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
